@@ -29,7 +29,8 @@ navLinks.forEach(item => {
 // For videos 
 const videoClick = document.querySelector(".videos"),
     endPage = document.querySelector(".end"),
-    removeEnd = document.querySelectorAll(".remove-end");
+    removeEnd = document.querySelectorAll(".remove-end"),
+    swiperVideo = document.querySelector(".swiper-slide video");
 
 videoClick.addEventListener("click", () => {
     endPage.classList.toggle(newClass);
@@ -39,4 +40,18 @@ removeEnd.forEach(item => {
     item.addEventListener("click", () => {
         endPage.classList.toggle(newClass);
     });
+});
+
+// for note page
+const removeNote = document.querySelector("#remove-note"),
+    notePad = document.querySelector(".notepad"),
+    clickNotepad = document.querySelector(".click-note");
+
+    
+clickNotepad.addEventListener("click", () => {
+    notePad.classList.toggle(newClass);
+});
+
+removeNote.addEventListener("click", () => {
+    notePad.classList.toggle(newClass);
 });

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icon Links and more... -->
+    <link rel="shortcut icon" href="./images/nav-logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
-    <title>New Tutorials</title>
+    <title>New code</title>
 </head>
 <body>
 
@@ -18,8 +19,8 @@
     <!-- navbar -->
         <header>
             <ul class="navbar">
-                <a href="#" class="nav-link"><i class='bx bx-home' id="nav-icons"></i> Home</a>
-                <a href="#" class="nav-link"><i class='bx bx-notepad' id="nav-icons"></i> note's</a>
+                <a href="#home" class="nav-link"><i class='bx bx-home' id="nav-icons"></i> Home</a>
+                <a href="#" class="nav-link click-note"><i class='bx bx-notepad' id="nav-icons"></i> note's</a>
                 <a href="#" class="nav-link"><i class='bx bx-like' id="nav-icons"></i></i> liked</a>
                 <a href="#" class="nav-link"><i class='bx bxs-user-account' id="nav-icons"></i> accaunt</a>
                 <a href="#" class="nav-link"><i class='bx bx-message-dots' id="nav-icons"></i> message</a>
@@ -43,7 +44,7 @@
     <!-- Search-bar -->
 
     <!-- Center page -->
-        <div class="center">
+        <div class="center" itemref="home">
             <h3 class="center-logo">interesting <span>tutorials</span></h3>
             <div class="flex-projects">
                 <div class="project-card">
@@ -122,8 +123,27 @@
                 <div class="swiper-button-next" id="slide-btn"></div>
                 <div class="swiper-button-prev" id="slide-btn"></div>
             </div>
+            <h3 class="end-logo">video tutorials</h3>
         </div>
     <!-- End Page -->
+
+    <!-- Note's page -->
+        <div class="notepad">
+            <h3 class="note-logo">creating <span>your notes</span></h3>
+            <form>
+                <input type="text" class="writer" placeholder="write your note's">
+                <button class="save-notes">save</button>
+            </form>
+            <i class='bx bx-log-out-circle' id="remove-note"></i>
+            <div class="request">
+                <h3 class="result">your result</h3>
+                <div class="result-card">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="delete-result">delete</button>
+                </div>
+            </div>
+        </div>
+    <!-- Note's page -->
     
     <!-- Script Links and files -->
     <script src="./js/script.js"></script>
