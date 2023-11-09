@@ -332,9 +332,9 @@ header.active {
     z-index: 100;
     position: absolute;
     padding: 32px 20px;
-    transition: transform 1s ease;
     transform: translateY(500%);
     backdrop-filter: blur(20px);
+    transition: transform 1s ease;
 }
 
 .notepad.active {
