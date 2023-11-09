@@ -47,6 +47,7 @@ body {
     position: fixed;
     z-index: 100;
     display: flex;
+    display: none;
     align-items: center;
     position: absolute;
     backdrop-filter: blur(30px);
@@ -358,7 +359,7 @@ header.active {
     z-index: 100;
     position: absolute;
     padding: 82px 20px;
-    transform: translateY(500%);
+    /* transform: translateY(500%); */
     backdrop-filter: blur(20px);
     transition: transform 1s ease;
 }
@@ -446,12 +447,14 @@ header.active {
 
 .result-card {
     width: 100%;
-    height: 40%;
+    height: 70px;
+    font-size: 20px;
     margin-top: 1rem;
     border-radius: 5px;
     color: var(--white);
     padding: 5px 5px;
     position: relative;
+    list-style: none;
     background: var(--indigo);
 }
 
@@ -481,4 +484,28 @@ header.active {
     color: var(--white);
     border-radius: 5px;
     background: var(--indigo);
+}
+
+.no-notes {
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.no-notes.active {
+    display: none;
+}
+
+.no-txt {
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+.no-note {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-top: 1rem;
 }

@@ -110,35 +110,27 @@
         <div class="notepad">
             <h3 class="go-home">go back</h3>
             <h3 class="note-logo">creating <span>your notes</span></h3>
-            <form>
+            <form class="note-form">
                 <input type="text" class="writer" placeholder="write your note's">
                 <button class="save-notes">save</button>
             </form>
             <i class='bx bx-log-out-circle' id="remove-note"></i>
+            <div class="no-notes">
+                <img src="./images/for-note.png" class="no-note">
+                <h3 class="no-txt">You have not created a note, please create a note</h3>
+            </div>
             <div class="request">
                 <h3 class="result">your result</h3>
-                <div class="result-card">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button class="delete-result">delete</button>
-                </div>
-                <div class="result-card">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button class="delete-result">delete</button>
-                </div>
-                <div class="result-card">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button class="delete-result">delete</button>
-                </div>
-                <div class="result-card">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button class="delete-result">delete</button>
-                </div>
+                <li class="result-card">
+                    <button class="delete-result"><i class='bx bxs-trash'></i></button>
+                </li>
             </div>
         </div>
     <!-- Note's page -->
     
     <!-- Script Links and files -->
     <script src="./js/script.js"></script>
+    <script src="./js/note's.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {

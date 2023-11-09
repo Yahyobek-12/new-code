@@ -93,6 +93,11 @@
     .center {
         text-align: center;
     }
+
+    .no-note {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -132,5 +137,10 @@
         border-radius: 50px;
         color: var(--white);
         background: var(--indigo);
+    }
+
+    .no-note {
+        width: 150px;
+        height: 150px;
     }
 }
