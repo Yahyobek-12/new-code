@@ -19,7 +19,7 @@
         height: 100%;
         z-index: 100;
         position: absolute;
-        transform: translateX(-500%);
+        /* transform: translateX(-500%); */
         transition: transform 1s ease;
     }
 

@@ -194,7 +194,7 @@ header.active {
 }
 
 .flex-projects {
-    top: 180px;
+    top: 130px;
     left: 0;
     width: 100%;
     height: 30%;
@@ -282,11 +282,14 @@ header.active {
     font-size: 18px;
     border-radius: 5px;
     position: relative;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
 }
 
 .swiper-slide video {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     z-index: -1;
     border-radius: 5px;
     object-fit: cover;
@@ -294,7 +297,7 @@ header.active {
 
 .video-name {
     top: 10px;
-    left: 10px;
+    left: 30px;
     padding: 5px 10px;
     position: absolute;
     color: var(--white);
@@ -309,7 +312,7 @@ header.active {
 
 .remove-end {
     top: 10px;
-    left: 120px;
+    left: 140px;
     display: none;
     cursor: pointer;
     font-size: 20px;
@@ -331,7 +334,7 @@ header.active {
     height: 100vh;
     z-index: 100;
     position: absolute;
-    padding: 32px 20px;
+    padding: 82px 20px;
     transform: translateY(500%);
     backdrop-filter: blur(20px);
     transition: transform 1s ease;
@@ -347,7 +350,7 @@ header.active {
     padding: 10px 20px;
     color: var(--white);
     border-radius: 5px;
-    background: var(--yellow);
+    background: var(--indigo);
 }
 
 .writer {
@@ -357,7 +360,7 @@ header.active {
     font-size: 20px;
     outline: none;
     border-radius: 5px;
-    border: 3px solid var(--yellow);
+    border: 3px solid var(--indigo);
 }
 
 .save-notes {
@@ -369,21 +372,21 @@ header.active {
     cursor: pointer;
     border-radius: 5px;
     color: var(--white);
-    background: var(--yellow);
-    border: 3px solid var(--yellow);
+    background: var(--indigo);
+    border: 3px solid var(--indigo);
     box-shadow: 0 3px 0 3px var(--black);
 }
 
 #remove-note {
     left: 20px;
-    bottom: 10px;
+    top: 10px;
     font-size: 30px;
     cursor: pointer;
     position: absolute;
     padding: 10px 10px;
-    color: var(--black);
+    color: var(--white);
     border-radius: 50px;
-    background: var(--yellow);
+    background: var(--indigo);
     transition: transform 1s ease;
     animation: removeNote 1s linear infinite;
 }
@@ -404,11 +407,14 @@ header.active {
 
 .request {
     width: 100%;
-    height: 55%;
+    height: 70%;
     margin-top: 3rem;
     overflow-y: scroll;
     border-radius: 5px;
-    padding: 10px 20px;
+}
+
+.request::-webkit-scrollbar {
+    width: 0;
 }
 
 .result {
@@ -423,7 +429,7 @@ header.active {
     color: var(--white);
     padding: 5px 5px;
     position: relative;
-    background: var(--yellow);
+    background: var(--indigo);
 }
 
 .result-card p {
@@ -442,4 +448,14 @@ header.active {
     color: var(--white);
     background: crimson;
     border-radius: 5px;
+}
+
+.go-home {
+    top: 15px;
+    right: 20px;
+    padding: 10px 70px;
+    position: absolute;
+    color: var(--white);
+    border-radius: 5px;
+    background: var(--indigo);
 }

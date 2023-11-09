@@ -120,8 +120,7 @@
                     <video src="./videos/btn-tut.mp4" controls></video>
                   </div>
                 </div>
-                <div class="swiper-button-next" id="slide-btn"></div>
-                <div class="swiper-button-prev" id="slide-btn"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <h3 class="end-logo">video tutorials</h3>
         </div>
@@ -129,6 +128,7 @@
 
     <!-- Note's page -->
         <div class="notepad">
+            <h3 class="go-home">go back</h3>
             <h3 class="note-logo">creating <span>your notes</span></h3>
             <form>
                 <input type="text" class="writer" placeholder="write your note's">
@@ -137,6 +137,18 @@
             <i class='bx bx-log-out-circle' id="remove-note"></i>
             <div class="request">
                 <h3 class="result">your result</h3>
+                <div class="result-card">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="delete-result">delete</button>
+                </div>
+                <div class="result-card">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="delete-result">delete</button>
+                </div>
+                <div class="result-card">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <button class="delete-result">delete</button>
+                </div>
                 <div class="result-card">
                     <p>Lorem ipsum dolor sit amet.</p>
                     <button class="delete-result">delete</button>
@@ -150,9 +162,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-        navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+        direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
         });
     </script>
