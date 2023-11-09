@@ -47,7 +47,7 @@ body {
     position: fixed;
     z-index: 100;
     display: flex;
-    display: none;
+    /* display: none; */
     align-items: center;
     position: absolute;
     backdrop-filter: blur(30px);
@@ -359,7 +359,7 @@ header.active {
     z-index: 100;
     position: absolute;
     padding: 82px 20px;
-    /* transform: translateY(500%); */
+    transform: translateY(500%);
     backdrop-filter: blur(20px);
     transition: transform 1s ease;
 }
