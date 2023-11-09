@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
         addNewNote(noteDb.dbNote);
         sortArr(noteDb.dbNote)
         console.log(noteDb.dbNote);
-        localStorage.setItem("note's", JSON.stringify(newNotes));
+        // localStorage.setItem("note's", JSON.stringify(newNotes));
     };
 
     e.target.reset();
@@ -36,7 +36,7 @@ function addNewNote (dbNote) {
     dbNote.forEach((item, idx) => {
         resultWrapper.innerHTML += `
         <li class="result-card">${idx + 1}
-            ${localStorage.getItem("note's", JSON.stringify(item))} 
+            ${item}
             <button class="delete-result"><i class='bx bxs-trash'></i></button>
         </li>
         `
@@ -49,7 +49,7 @@ function addNewNote (dbNote) {
             noteDb.dbNote.splice(idx, 1)
             noNotes.classList.add("active");
             addNewNote(noteDb.dbNote);
-            localStorage.removeItem("note's", item)
+            // localStorage.removeItem("note's", item)
         });
     });
 };
