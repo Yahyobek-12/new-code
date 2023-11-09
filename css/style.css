@@ -276,7 +276,7 @@ header.active {
 
 .remove-end {
     top: 10px;
-    left: 140px;
+    right: 30px;
     display: none;
     cursor: pointer;
     font-size: 20px;
