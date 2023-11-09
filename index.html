@@ -46,51 +46,25 @@
     <!-- Center page -->
         <div class="center" itemref="home">
             <h3 class="center-logo">interesting <span>tutorials</span></h3>
-            <div class="flex-projects">
-                <div class="project-card">
-                    <div class="p-img">
-                        <img src="./images/project-1.png">
-                        <a href="#" class="p-name">movie-app</a>
-                        <i class="bx bx-like" id="like-p"></i>
-                    </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <p id="p-statistic-star">4.7</p>
-                    </div>
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/project-1.png">
+                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
+                    <p class="about-p">Lorem ipsum dolor</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/project-2.png">
+                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
+                    <p class="about-p">Lorem ipsum dolor</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/project-3.jpg">
+                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
+                    <p class="about-p">Lorem ipsum dolor</p>
+                  </div>
                 </div>
-                <div class="project-card">
-                    <div class="p-img">
-                        <img src="./images/project-1.png">
-                        <a href="#" class="p-name">movie-app</a>
-                        <i class="bx bx-like" id="like-p"></i>
-                    </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <p id="p-statistic-star">4.7</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="p-img">
-                        <img src="./images/project-1.png">
-                        <a href="#" class="p-name">movie-app</a>
-                        <i class="bx bx-like" id="like-p"></i>
-                    </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <p id="p-statistic-star">4.7</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="p-img">
-                        <img src="./images/project-1.png">
-                        <a href="#" class="p-name">movie-app</a>
-                        <i class="bx bx-like" id="like-p"></i>
-                    </div>
-                    <div class="stars">
-                        <i class='bx bxs-star'></i>
-                        <p id="p-statistic-star">4.7</p>
-                    </div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     <!-- Center page -->
@@ -165,6 +139,12 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".projectSwiper", {
+            pagination: {
+                el: ".swiper-pagination",
             },
         });
     </script>

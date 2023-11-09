@@ -108,6 +108,18 @@
         width: 100%;
     }
 
+    .center {
+        padding: 10px 20px;
+    }
+
+    .demo-p {
+        right: 10px;
+    }
+
+    .about-p {
+        left: 10px;
+    }
+
     .profile-df {
         width: 25%;
     }
