@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Links and more... -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>New Tutorials</title>
+</head>
+<body>
+
+    <i class='bx bx-menu-alt-right' id="menu"></i>
+    <i class='bx bx-message-square-x' id="remove-menu"></i>
+   
+    <!-- navbar -->
+        <header>
+            <ul class="navbar">
+                <a href="#" class="nav-link"><i class='bx bx-home' id="nav-icons"></i> Home</a>
+                <a href="#" class="nav-link"><i class='bx bx-notepad' id="nav-icons"></i> note's</a>
+                <a href="#" class="nav-link"><i class='bx bx-like' id="nav-icons"></i></i> liked</a>
+                <a href="#" class="nav-link"><i class='bx bxs-user-account' id="nav-icons"></i> accaunt</a>
+                <a href="#" class="nav-link"><i class='bx bx-message-dots' id="nav-icons"></i> message</a>
+                <a href="#" class="nav-link videos"><i class='bx bxs-videos' id="nav-icons"></i> videos</a>
+                <a href="#" class="nav-link"><i class='bx bx-log-out' id="nav-icons"></i> logout</a>
+            </ul>
+        </header>
+    <!-- navbar -->
+
+    <!-- Search-bar -->
+        <div class="search-bar">
+            <img src="./images/nav-logo.webp" alt="nav-logo" class="nav-logo">
+            <form class="for-search">
+                <input type="text" class="search-input" placeholder="search tutorials...">
+                <button class="search-btn"><i class='bx bx-search-alt'></i></button>
+            </form>
+            <div class="profile-df">
+                <i class='bx bx-image-add'></i>
+            </div>
+        </div>
+    <!-- Search-bar -->
+
+    <!-- Center page -->
+        <div class="center">
+            <h3 class="center-logo">interesting <span>tutorials</span></h3>
+            <div class="flex-projects">
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="./images/project-1.png">
+                        <a href="#" class="p-name">movie-app</a>
+                        <i class="bx bx-like" id="like-p"></i>
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <p id="p-statistic-star">4.7</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="./images/project-1.png">
+                        <a href="#" class="p-name">movie-app</a>
+                        <i class="bx bx-like" id="like-p"></i>
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <p id="p-statistic-star">4.7</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="./images/project-1.png">
+                        <a href="#" class="p-name">movie-app</a>
+                        <i class="bx bx-like" id="like-p"></i>
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <p id="p-statistic-star">4.7</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-img">
+                        <img src="./images/project-1.png">
+                        <a href="#" class="p-name">movie-app</a>
+                        <i class="bx bx-like" id="like-p"></i>
+                    </div>
+                    <div class="stars">
+                        <i class='bx bxs-star'></i>
+                        <p id="p-statistic-star">4.7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Center page -->
+
+    <!-- End Page -->
+        <div class="end">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p class="video-name">button-tut</p>
+                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
+                    <video src="./videos/btn-tut.mp4" controls></video>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="video-name">button-tut</p>
+                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
+                    <video src="./videos/btn-tut.mp4" controls></video>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="video-name">button-tut</p>
+                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
+                    <video src="./videos/btn-tut.mp4" controls></video>
+                  </div>
+                  <div class="swiper-slide">
+                    <p class="video-name">button-tut</p>
+                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
+                    <video src="./videos/btn-tut.mp4" controls></video>
+                  </div>
+                </div>
+                <div class="swiper-button-next" id="slide-btn"></div>
+                <div class="swiper-button-prev" id="slide-btn"></div>
+            </div>
+        </div>
+    <!-- End Page -->
+    
+    <!-- Script Links and files -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
