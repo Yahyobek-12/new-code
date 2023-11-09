@@ -1,6 +1,11 @@
 // New class key
 let newClass = "active";
 
+// for loader
+setTimeout(() => {
+    document.querySelector(".loader").style.display = "none";
+}, 3000);
+
 // for menu and nav
 const nav = document.querySelector("header"),
     menuNav = document.querySelector("#menu"),
