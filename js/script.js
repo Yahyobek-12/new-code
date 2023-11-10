@@ -45,3 +45,18 @@ clickNotepad.addEventListener("click", () => {
 removeNote.addEventListener("click", () => {
     notePad.classList.toggle(newClass);
 });
+
+// for video page 
+const goBack = document.querySelectorAll("#go-back"),
+    clickVideo = document.querySelector(".videos"),
+    videoPage = document.querySelector(".video-page");
+
+clickVideo.addEventListener("click", () => {
+    videoPage.classList.toggle(newClass);
+});
+
+goBack.forEach((item) => {
+    item.addEventListener("click", () => {
+        videoPage.classList.toggle(newClass);
+    });
+});

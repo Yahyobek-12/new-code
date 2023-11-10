@@ -100,6 +100,10 @@
     .projects {
         height: 50vh;
     }
+
+    .video-page {
+        padding: 5px 5px;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -143,6 +147,10 @@
         height: 80%;
     }
 
+    .video-card {
+        padding: 10px 20px;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -170,6 +178,10 @@
 
     .projects {
         margin-top: 20rem;
+    }
+
+    .video-page .swiper-slide {
+        padding: 50px 30px;
     }
 }
 
@@ -200,5 +212,9 @@
     .no-note {
         width: 150px;
         height: 150px;
+    }
+
+    .video-page .swiper-slide {
+        padding: 40px 15px;
     }
 }

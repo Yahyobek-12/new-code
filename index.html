@@ -141,6 +141,47 @@
             </ul>
         </div>
     <!-- Note's page -->
+
+    <!-- Videos -->
+        <div class="video-page">
+            <i class='bx bx-log-out-circle' id="go-back"></i>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="video-card">
+                        <div class="video-name">
+                            <p>html & css & js landing page</p>
+                        </div>
+                        <video src="./videos/btn-tut.mp4" controls></video>
+                        <i class='bx bxs-heart' id="like"></i>
+                        <i class='bx bx-code' id="free-code"></i>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video-card">
+                        <div class="video-name">
+                            <p>react.js todolist</p>
+                        </div>
+                        <video src="./videos/btn-tut.mp4" controls></video>
+                        <i class='bx bxs-heart' id="like"></i>
+                        <i class='bx bx-code' id="free-code"></i>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video-card">
+                        <div class="video-name">
+                            <p>html & bootstrap dashboard</p>
+                        </div>
+                        <video src="./videos/btn-tut.mp4" controls></video>
+                        <i class='bx bxs-heart' id="like"></i>
+                        <i class='bx bx-code' id="free-code"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    <!-- Videos -->
     
     <!-- Script Links and files -->
     <script src="./js/script.js"></script>
@@ -148,6 +189,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".projectSwiper", {});
+
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 </body>
 </html>
