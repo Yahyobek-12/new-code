@@ -47,7 +47,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    /* display: none; */
+    display: none;
     position: absolute;
     position: fixed;
     backdrop-filter: blur(30px);
@@ -594,7 +594,7 @@ header.active {
     position: fixed;
     padding: 30px 30px;
     backdrop-filter: blur(25px);
-    transform: translateY(-500%);
+    /* transform: translateY(-500%); */
     transition: transform 1s ease;
 }
 
@@ -660,5 +660,5 @@ header.active {
 }
 
 #free-code {
-    bottom: 45%;
+    bottom: 50%;
 }

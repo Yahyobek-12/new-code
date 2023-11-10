@@ -183,6 +183,11 @@
     .video-page .swiper-slide {
         padding: 50px 30px;
     }
+
+    .video-card video {
+        height: 90%;
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (max-width: 380px) {
