@@ -43,12 +43,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    position: fixed;
     z-index: 100;
+    height: 100vh;
     display: flex;
-    /* display: none; */
+    position: fixed;
     align-items: center;
+    display: none;
     position: absolute;
     backdrop-filter: blur(30px);
     justify-content: center;
@@ -233,7 +233,7 @@ header.active {
 
 .center {
     top: 80px;
-    width: 70%;
+    width: 100%;
     height: 89vh;
     z-index: -1;
     overflow: scroll;
@@ -248,108 +248,117 @@ header.active {
     height: 0%;
 }
 
-.center-logo {
-    font-size: 23px;
-}
-
-.center-logo span {
-    color: var(--green);
-}
-
-.center .projectSwiper {
-    height: 350px;
-    margin-top: 1.5rem;
+.welcome {
+    width: 100%;
+    height: 53%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px 20px;
     border-radius: 10px;
-    position: relative;
+    justify-content: space-between;
+    box-shadow: 0 0 5px var(--green);
 }
 
-.center .projectSwiper img {
+.welcome-logo span {
+    color: var(--indigo);
+}
+
+.welcome h4 {
+    margin-top: 0.5rem;
+}
+
+.welcome-img {
+    width: 350px;
+    height: 300px;
+}
+
+.welcome-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.demo-p {
-    bottom: 30px;
-    right: 20px;
-    cursor: pointer;
-    position: absolute;
-    padding: 10px 12px;
-    color: var(--white);
-    border-radius: 50px;
-    transform: rotate(-180deg);
-    background: var(--indigo);
-}
-
-.about-p {
-    bottom: 30px;
-    left: 10px;
-    padding: 10px 20px;
-    position: absolute;
-    color: var(--white);
-    border-radius: 5px;
-    background: var(--indigo);
-}
-
-.end {
-    top: 80px;
-    right: 10px;
-    width: 30%;
-    height: 89vh;
-    position: absolute;
-}
-
-.swiper {
+.about-app {
     width: 100%;
-    height: 35%;
-  }
-
-.swiper-slide {
+    height: 50%;
     display: flex;
-    font-size: 18px;
-    border-radius: 5px;
-    position: relative;
+    margin-top: 2rem;
     align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(20px);
+    justify-content: space-around;
 }
 
-.swiper-slide video {
-    width: 90%;
-    height: 80%;
-    z-index: -1;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.video-name {
-    top: 10px;
-    left: 30px;
-    padding: 5px 10px;
-    position: absolute;
-    color: var(--white);
-    border-radius: 5px;
+.about-card {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
     background: var(--indigo);
+    justify-content: center;
+    position: relative;
+    margin-left: 1rem;
 }
 
-#slide-btn {
+.about-card:nth-child(2) {
+    background: var(--green);
+}
+
+.about-card:nth-child(3) {
+    background: var(--yellow);
+}
+
+.about-card i {
+    font-size: 50px;
+    color: var(--white);
+}
+
+.card-number {
     bottom: 10px;
     position: absolute;
+    color: var(--white);
 }
 
-.remove-end {
-    top: 10px;
-    right: 30px;
-    display: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 4px 10px;
-    position: absolute;
+.offers {
+    width: 100%;
+    height: 50%;
+    margin-top: 3rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.df-offer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offer-card {
+    width: 30%;
+    height: 100%;
     border-radius: 5px;
+    padding: 30px 22px;
     color: var(--white);
+    background: var(--yellow);
+    transition: transform .5s ease;
+}
+
+.offer-card:nth-child(2) {
     background: var(--indigo);
 }
 
+.offer-card:nth-child(3) {
+    background: var(--green);
+}
+
+.offer-card:hover {
+    transform: translateY(10%);
+}
+
+.offer-card p {
+    margin-top: 0.5rem;
+}
 
 .notepad {
     top: 0;
@@ -508,4 +517,19 @@ header.active {
     height: 250px;
     text-align: center;
     margin-top: 1rem;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    z-index: -1;
+    position: fixed;
+    align-items: center;
+    position: absolute;
+    color: var(--white);
+    justify-content: center;
+    backdrop-filter: blur(20px);
 }

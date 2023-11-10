@@ -52,59 +52,47 @@
 
     <!-- Center page -->
         <div class="center" itemref="home">
-            <h3 class="center-logo">interesting <span>tutorials</span></h3>
-            <div class="swiper projectSwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./images/project-1.png">
-                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
-                    <p class="about-p">Lorem ipsum dolor</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/project-2.png">
-                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
-                    <p class="about-p">Lorem ipsum dolor</p>
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/project-3.jpg">
-                    <a href="#" class="demo-p"><i class='bx bx-log-out-circle'></i></a>
-                    <p class="about-p">Lorem ipsum dolor</p>
-                  </div>
+                <div class="welcome">
+                    <div class="welcome-txt">
+                        <h3 class="welcome-logo">welcome <span>new-code</span></h3>
+                        <h4> we have more tutorials and projects</h4>
+                        <div class="about-app">
+                            <div class="about-card">
+                                <i class='bx bxs-videos'></i>
+                                <p class="card-number">2 videos</p>
+                            </div>
+                            <div class="about-card">
+                                <i class='bx bxs-spreadsheet'></i>
+                                <p class="card-number">5 projects</p>
+                            </div>
+                            <div class="about-card">
+                                <i class='bx bx-download'></i>
+                                <p class="card-number">4 downloads</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome-img">
+                        <img src="./images/home-logo.png" alt="">
+                    </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
+                <div class="offers">
+                    <div class="df-offer">
+                        <div class="offer-card">
+                            <h3>html & css</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia nam id eos velit numquam!</p>
+                        </div>
+                        <div class="offer-card">
+                            <h3>full javascript</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia nam id eos velit numquam!</p>
+                        </div>
+                        <div class="offer-card">
+                            <h3>react & redux</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia nam id eos velit numquam!</p>
+                        </div>
+                    </div>
+                </div>
         </div>
     <!-- Center page -->
-
-    <!-- End Page -->
-        <div class="end">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <p class="video-name">button-tutorials</p>
-                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
-                    <video src="./videos/btn-tut.mp4" controls></video>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="video-name">card-tutorials</p>
-                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
-                    <video src="./videos/btn-tut.mp4" controls></video>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="video-name">responsive-tutorials</p>
-                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
-                    <video src="./videos/btn-tut.mp4" controls></video>
-                  </div>
-                  <div class="swiper-slide">
-                    <p class="video-name">animation-tutorials</p>
-                    <h3 class="remove-end"><i class='bx bx-log-out-circle'></i></h3>
-                    <video src="./videos/btn-tut.mp4" controls></video>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    <!-- End Page -->
 
     <!-- Note's page -->
         <div class="notepad">
@@ -119,33 +107,28 @@
                 <img src="./images/for-note.png" class="no-note">
                 <h3 class="no-txt">You have not created a note, please create a note</h3>
             </div>
-            <div class="request">
+            <ul class="request">
                 <h3 class="result">your result</h3>
                 <li class="result-card">
                     <button class="delete-result"><i class='bx bxs-trash'></i></button>
                 </li>
-            </div>
+            </ul>
         </div>
     <!-- Note's page -->
+
+    <!-- Footer -->
+        <footer>
+            <h3>design & coding by yahyobek</h3>
+        </footer>
+    <!-- Footer -->
+
     
     <!-- Script Links and files -->
     <script src="./js/script.js"></script>
     <script src="./js/note's.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var swiper = new Swiper(".projectSwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-            },
-        });
+        
     </script>
 </body>
 </html>

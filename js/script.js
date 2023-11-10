@@ -31,21 +31,6 @@ navLinks.forEach(item => {
         removeMenu.classList.toggle(newClass);
     })
 })
-// For videos 
-const videoClick = document.querySelector(".videos"),
-    endPage = document.querySelector(".end"),
-    removeEnd = document.querySelectorAll(".remove-end"),
-    swiperVideo = document.querySelector(".swiper-slide video");
-
-videoClick.addEventListener("click", () => {
-    endPage.classList.toggle(newClass);
-});
-
-removeEnd.forEach(item => {
-    item.addEventListener("click", () => {
-        endPage.classList.toggle(newClass);
-    });
-});
 
 // for note page
 const removeNote = document.querySelector("#remove-note"),
