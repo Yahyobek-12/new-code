@@ -49,7 +49,8 @@ removeNote.addEventListener("click", () => {
 // for video page 
 const goBack = document.querySelectorAll("#go-back"),
     clickVideo = document.querySelector(".videos"),
-    videoPage = document.querySelector(".video-page");
+    videoPage = document.querySelector(".video-page"),
+    pauseVideo = document.querySelectorAll("video");
 
 clickVideo.addEventListener("click", () => {
     videoPage.classList.toggle(newClass);
