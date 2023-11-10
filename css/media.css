@@ -180,13 +180,30 @@
         margin-top: 20rem;
     }
 
+    .video-page {
+        padding: 0;
+    }
+
     .video-page .swiper-slide {
-        padding: 50px 30px;
+        padding: 0;
     }
 
     .video-card video {
         height: 90%;
         margin-top: 3rem;
+    }
+
+    #go-back {
+        top: 18px;
+        left: 85%;
+        z-index: 99;
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px 10px;
+        position: absolute;
+        border-radius: 50%;
+        color: var(--indigo);
+        background: var(--white);
     }
 }
 

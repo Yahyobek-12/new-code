@@ -651,7 +651,7 @@ header.active {
 #like, #free-code {
     right: 15px;
     bottom: 55%;
-    font-size: 30px;
+    font-size: 22px;
     cursor: pointer;
     padding: 10px 10px;
     position: absolute;
@@ -661,5 +661,5 @@ header.active {
 }
 
 #free-code {
-    bottom: 45%;
+    bottom: 48%;
 }
