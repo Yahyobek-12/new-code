@@ -27,12 +27,11 @@
         <header>
             <ul class="navbar">
                 <a href="#home" class="nav-link"><i class='bx bx-home' id="nav-icons"></i> Home</a>
-                <a href="#" class="nav-link click-note"><i class='bx bx-notepad' id="nav-icons"></i> note's</a>
-                <a href="#" class="nav-link"><i class='bx bx-like' id="nav-icons"></i></i> liked</a>
-                <a href="#" class="nav-link"><i class='bx bxs-user-account' id="nav-icons"></i> accaunt</a>
-                <a href="#" class="nav-link"><i class='bx bx-message-dots' id="nav-icons"></i> message</a>
+                <a href="#project" class="nav-link"><i class='bx bxs-inbox' id="nav-icons"></i> projects</a>
+                <a href="#" class="nav-link click-note"><i class='bx bx-edit-alt' id="nav-icons"></i> note's</a>
                 <a href="#" class="nav-link videos"><i class='bx bxs-videos' id="nav-icons"></i> videos</a>
-                <a href="#" class="nav-link"><i class='bx bx-log-out' id="nav-icons"></i> logout</a>
+                <a href="#" class="nav-link"><i class='bx bx-heart-circle' id="nav-icons"></i></i> favourite</a>
+                <a href="#" class="nav-link"><i class='bx bxs-user-account' id="nav-icons"></i> accaunt</a>
             </ul>
         </header>
     <!-- navbar -->
@@ -51,7 +50,7 @@
     <!-- Search-bar -->
 
     <!-- Center page -->
-        <div class="center" itemref="home">
+        <div class="center" id="home">
                 <div class="welcome">
                     <div class="welcome-txt">
                         <h3 class="welcome-logo">welcome <span>new-code</span></h3>
@@ -75,14 +74,16 @@
                         <img src="./images/home-logo.png" alt="">
                     </div>
                 </div>
+
                 <div class="offers">
+                    <h3>we offers</h3>
                     <div class="df-offer">
                         <div class="offer-card">
                             <h3>html & css</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia nam id eos velit numquam!</p>
                         </div>
                         <div class="offer-card">
-                            <h3>full javascript</h3>
+                            <h3>javascript & jquery</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet mollitia nam id eos velit numquam!</p>
                         </div>
                         <div class="offer-card">
@@ -93,6 +94,31 @@
                 </div>
         </div>
     <!-- Center page -->
+
+        <!-- Projects -->
+        <div class="projects" id="project">
+            <h3>some <span>projects</span></h3>
+            <div class="swiper projectSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./images/project-1.png">
+                    <h4 class="p-name">movie-app</h4>
+                    <a href="#" class="p-demo">demo</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/project-2.png">
+                    <h4 class="p-name">movie-app</h4>
+                    <a href="#" class="p-demo">demo</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./images/project-3.jpg">
+                    <h4 class="p-name">movie-app</h4>
+                    <a href="#" class="p-demo">demo</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- Projects -->
 
     <!-- Note's page -->
         <div class="notepad">
@@ -115,20 +141,13 @@
             </ul>
         </div>
     <!-- Note's page -->
-
-    <!-- Footer -->
-        <footer>
-            <h3>design & coding by yahyobek</h3>
-        </footer>
-    <!-- Footer -->
-
     
     <!-- Script Links and files -->
     <script src="./js/script.js"></script>
     <script src="./js/note's.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        
+        var swiper = new Swiper(".projectSwiper", {});
     </script>
 </body>
 </html>
